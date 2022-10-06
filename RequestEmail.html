@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Hi!,</p>
+<p>You have a new contact request from <?= form.requestor ?>.</p><ul>
+<li>Company contacting: <?= form.company ?></li>
+<li>Requester content: <?= form.email ?></li>
+<li>Type of email: <?= form.type ?> </li>
+</ul>
+
+<p> Click <a href="<?= form.approve ?>">here</a> to approve email. Click <a href="<?= form.deny ?>">here</a> to deny email. </p>
+
+
+<p>Regards,</p>
+<p><?= form.requestor ?></p>
+<p><i>Request ID <?= form.uuid ?></i></p>
+<p>Row: <?= form.row ?> </p>
+
+</body>
+
+  
+</html>
